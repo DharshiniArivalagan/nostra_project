@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSTRA - Collections</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Mobile Sidebar Menu -->
+    <div class="mobile_sidebar" id="mobileSidebar">
+        <div class="sidebar_header">
+            <h2>Nostra</h2>
+            <span class="close_sidebar" id="closeSidebar"><i class="fa-solid fa-x"></i></span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#new-arrival">New Arrival</a></li>
+            <li><a href="index.html#most-wanted">Most Wanted</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="sidebar_overlay" id="sidebarOverlay"></div>
+
+    <!-- Offer Tag -->
+    <div class="offer_tag">
+        <h3>Sign Up and <strong>GET 20% OFF</strong> for your first Order</h3>
+        <span>&times;</span>
+        
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Nostra</h1>
+        <div class="navlist">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#new-arrival">New Arrival</a></li>
+                <li><a href="index.html#most-wanted">Most Wanted</a></li>
+                <li><a href="collection.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <h4 id="menuToggle"><i class="fa-solid fa-bars"></i></h4>
+        </div>
+    </div>
+
+    <section class="shop">
+
+        <!-- Sidebar Filters -->
+        <div class="sidebar">
+
+            <h2>Occasion</h2>
+            <label><input type="checkbox" class="filter-check" data-category="shirt"> Shirt</label>
+            <label><input type="checkbox" class="filter-check" data-category="half-shirt"> Half Shirt</label>
+            <label><input type="checkbox" class="filter-check" data-category="pants"> Pants</label>
+            <label><input type="checkbox" class="filter-check" data-category="half-pants"> Half Pants</label>
+            <label><input type="checkbox" class="filter-check" data-category="coat"> Coat</label>
+
+            <h2>Arrivals</h2>
+            <label><input type="checkbox" class="filter-check" data-category="new"> New</label>
+            <label><input type="checkbox" class="filter-check" data-category="old"> Old</label>
+
+        </div>
+
+        <!-- Products -->
+        <div class="products">
+
+            <div class="search_bar">
+                <input type="text" placeholder="Search..." id="searchInput">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="product_grid" id="productGrid">
+
+                <!-- Shirts (Full Sleeve) - marked as "new" -->
+                <div class="product" data-category="shirt" data-arrival="new">
+                    <img src="./imagess/blue shirt.jpg" alt="Classic formal Shirt">
+                    <h3>"Classic formal Shirt</h3>
+                    <p>₹349</p>
+                </div>
+
+                <div class="product" data-category="shirt" data-arrival="new">
+                    <img src="./imagess/brown shirt.jpg" alt=" formal summer Shirt">
+                    <h3>formal summer shirt</h3>
+                    <p>₹420</p>
+                </div>
+
+                <div class="product" data-category="shirt" data-arrival="old">
+                    <img src="./imagess/white shirt.jpg" alt="white Cotton Shirt">
+                    <h3>Modern Cotton Full Sleeve Shirt</h3>
+                    <p>₹389</p>
+                </div>
+
+                <div class="product" data-category="shirt" data-arrival="old">
+                    <img src="./imagess/court shirt.jpg" alt="modern Shirt">
+                    <h3>Premium Casual Office Shirt</h3>
+                    <p>₹450</p>
+                </div>
+
+                <!-- Half Shirts -->
+                <div class="product" data-category="half-shirt" data-arrival="new">
+                    <img src="./imagess/brown pants.jpg" alt="casual pants">
+                    <h3>Tropical Summer Half Shirt</h3>
+                    <p>₹299</p>
+                </div>
+
+                <div class="product" data-category="half-shirt" data-arrival="new">
+                    <img src="./imagess/gray pant.webp" alt="casul gray pants">
+                    <h3>Floral Beach Half Shirt</h3>
+                    <p>₹320</p>
+                </div>
+
+                <div class="product" data-category="half-shirt" data-arrival="old">
+                    <img src="./imagess/jooger.jpg" alt="modern joggers">
+                    <h3>Casual Printed Summer Shirt</h3>
+                    <p>₹310</p>
+                </div>
+
+                <div class="product" data-category="half-shirt" data-arrival="old">
+                    <img src="./imagess/trousers.jpg" alt="Lightweight Holiday Shirt">
+                    <h3>Lightweight Holiday Shirt</h3>
+                    <p>₹330</p>
+                </div>
+
+                <!-- Pants -->
+                <div class="product" data-category="pants" data-arrival="new">
+                    <img src="./imagess/blue shirt.jpg" alt="Slim Fit Pants">
+                    <h3>Classic Slim Fit Pants</h3>
+                    <p>₹579</p>
+                </div>
+
+                <div class="product" data-category="pants" data-arrival="new">
+                    <img src="./imagess/brown pants.jpg" alt="Formal Trousers">
+                    <h3>Modern Formal Trousers</h3>
+                    <p>₹620</p>
+                </div>
+
+                <div class="product" data-category="pants" data-arrival="old">
+                    <img src="./imagess/brown shirt.jpg" alt="Cotton Chino Pants">
+                    <h3>Casual Cotton Chino Pants</h3>
+                    <p>₹599</p>
+                </div>
+
+                <div class="product" data-category="pants" data-arrival="old">
+                    <img src="./imagess/trousers.jpg" alt="Straight Fit Pants">
+                    <h3>Urban Straight Fit Pants</h3>
+                    <p>₹640</p>
+                </div>
+
+                <!-- Coats -->
+                <div class="product" data-category="coat" data-arrival="new">
+                    <img src="./imagess/white shirt.jpg" alt="Classic Trench Coat">
+                    <h3>Classic Trench Coat</h3>
+                    <p>₹1299</p>
+                </div>
+
+                <div class="product" data-category="coat" data-arrival="new">
+                    <img src="./imagess/gray pant.webp" alt="Premium Winter Coat">
+                    <h3>Premium Winter Coat</h3>
+                    <p>₹1499</p>
+                </div>
+
+                <div class="product" data-category="coat" data-arrival="old">
+                    <img src="./imagess/court shirt.jpg" alt="Modern Overcoat">
+                    <h3>Modern Casual Overcoat</h3>
+                    <p>₹1399</p>
+                </div>
+
+                <div class="product" data-category="coat" data-arrival="old">
+                    <img src="./imagess/jooger.jpg" alt="Elegant Long Coat">
+                    <h3>Elegant Long Coat</h3>
+                    <p>₹1599</p>
+                </div>
+
+                <!-- Half Pants / Shorts -->
+                <div class="product" data-category="half-pants" data-arrival="new">
+                    <img src="./imagess/gray pant.webp" alt="Casual Summer Shorts">
+                    <h3>Casual Summer Shorts</h3>
+                    <p>₹259</p>
+                </div>
+
+                <div class="product" data-category="half-pants" data-arrival="new">
+                    <img src="./imagess/brown pants.jpg" alt="Beach Cotton Shorts">
+                    <h3>Beach Style Cotton Shorts</h3>
+                    <p>₹279</p>
+                </div>
+
+                <div class="product" data-category="half-pants" data-arrival="old">
+                    <img src="./imagess/blue shirt.jpg" alt="Comfort Fit Shorts">
+                    <h3>Comfort Fit Casual Shorts</h3>
+                    <p>₹249</p>
+                </div>
+
+                <div class="product" data-category="half-pants" data-arrival="old">
+                    <img src="./imagess/trousers.jpg" alt="Travel Shorts">
+                    <h3>Lightweight Travel Shorts</h3>
+                    <p>₹289</p>
+                </div>
+
+            </div>
+
+            <!-- No results message -->
+            <div class="no_results" id="noResults" style="display:none;">
+                <i class="fa-solid fa-face-frown"></i>
+                <p>No products found. Try a different filter!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h1>Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe →</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Nostra</h2>
+        <p>The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest</p>
+        <div class="social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <p>@ 2026 Nostra.com</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
